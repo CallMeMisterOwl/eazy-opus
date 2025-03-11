@@ -1,5 +1,4 @@
 import { pgTable, foreignKey, serial, text, integer, timestamp, pgEnum } from "drizzle-orm/pg-core"
-import { sql } from "drizzle-orm"
 
 export const tstatus = pgEnum("tstatus", ['todo', 'inprogress', 'done'])
 

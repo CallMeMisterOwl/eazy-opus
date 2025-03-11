@@ -1,5 +1,4 @@
 import { db } from '@/app/db';
-import { projectTable, taskTable } from '@/app/db/schema';
 import { eq } from 'drizzle-orm';
 import { TaskList } from './task-list';
 

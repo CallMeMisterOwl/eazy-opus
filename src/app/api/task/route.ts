@@ -3,7 +3,7 @@ import { taskTable } from '../../db/schema';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
-  const { title, description, status, projectID } = await request.json();
+  const { title, description, projectID } = await request.json();
   
   if (!title || !description || !projectID) {
     return NextResponse.json(
